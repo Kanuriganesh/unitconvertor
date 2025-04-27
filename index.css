@@ -1,6 +1,9 @@
 body {
     margin: 0;
     background-color: #F4F4F4;
+    min-height: 100vh; /* ADD THIS */
+    display: flex;
+    flex-direction: column;
 }
 h1{
    font-family: inter; 
@@ -62,8 +65,49 @@ section > h1{
 section>p{
      margin-bottom: 25px  !important;
 }
-main{ 
+main { 
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1; /* ADD THIS */
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        padding: 30px 10px;
+        height: auto;
+    }
+    h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+    #input-el {
+        width: 100px;
+        height: 50px;
+        font-size: 24px;
+    }
+    button {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    section {
+        width: 90%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    section > h1 {
+        font-size: 18px;
+    }
+    section > p {
+        font-size: 14px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    main {
+        padding: 10px;
+        background-color: pink !important;
+        min-height: 100vh; /* ADD THIS LINE */
+    }
 }
